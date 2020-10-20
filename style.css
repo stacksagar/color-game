@@ -1,0 +1,85 @@
+* {
+ transition: all 0.5s;
+}
+.headerBorder{ 
+ border:10px solid #00000060;
+} 
+.easy,
+.hard {
+ background: transparent;
+ border: none;
+ font-size: 15px;
+ cursor: pointer; 
+}
+
+.easy:focus,
+.hard:focus {
+ outline: none;
+}
+
+.btn-focus {
+ background: #00000044;
+ padding: 0px 6px;
+ transform: scale(1.2);
+ border-radius: 2px;
+}
+
+#refreshMain {
+ background: #555;
+ padding: 6px 12px;
+ display: inline-block;
+ border-radius: 3px;
+ text-align: center;
+ cursor: pointer; 
+}
+
+#refreshMain .refreshImg {
+ width: 25px;
+}
+
+.spin {
+ animation-name: spin;
+ animation-iteration-count: 1;
+ animation-duration: 0.8s;
+}
+
+@keyframes spin {
+ from {
+  transform: rotate(0deg)
+ }
+
+ to {
+  transform: rotate(160deg)
+ }
+}
+
+.box {
+ background: green;
+ margin: 10px auto;
+ height: 120px;
+ border-radius: 10px;
+ cursor: pointer; 
+}
+.text-wrong{
+ color: tomato !important;
+}
+.text-wrong2{
+ color: rgb(145, 131, 128) !important;
+ animation-name: opacity;
+ animation-iteration-count: infinite;
+ animation-duration:1.4s;
+}
+@keyframes opacity{
+ from{opacity:0;}
+ to{opacity:1;}
+}
+
+/* Responsive */
+@media (max-width: 480px){
+ #refreshMain {  
+  font-size:15px;
+ }
+ #refreshMain .refreshImg {
+  width:18px;
+ }
+}
